@@ -1,9 +1,18 @@
 # Fabric Example Mod
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## IDEA Setup
+ 1. Gradle Settings > Build and run using > Set Run tests using to IntelliJ IDEA
+ 2. File > Project Structure > Project > Set "Project compiler output" to /out director
+ 3. Rename all template stuff to new mod name:
+    - src/com/dannypas00/template:
+      - .
+      - Template.java  --  MAKE SURE TO DO THIS WITH IDEA REFACTOR
+      - ModInfo: MOD_ID
+    - resources/assets:
+      - template/
+      - data:
+        - template/
+        - fabric.mod.json content
+        - template.mixins.json
+        - template.mixins.json content
+ 4. Run genSources gradle task
